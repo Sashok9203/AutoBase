@@ -260,6 +260,8 @@
             findComboBox.AutoCompleteMode = AutoCompleteMode.Suggest;
             findComboBox.AutoCompleteSource = AutoCompleteSource.ListItems;
             findComboBox.Enabled = false;
+            findComboBox.FormattingEnabled = true;
+            findComboBox.ImeMode = ImeMode.NoControl;
             findComboBox.Location = new Point(8, 220);
             findComboBox.Name = "findComboBox";
             findComboBox.Size = new Size(139, 23);

@@ -22,7 +22,7 @@ namespace WinFormsApp1
             new string[] { "Fiesta", "Focus", "Mustang", "Escape", "Explorer" },
             new string[] { "3 Series", "5 Series", "X3", "X5", "7 Series" },
             new string[] { "C-Class", "E-Class", "S-Class", "GLC", "GLE" },
-            new string[] { "Chrysler", "Jeep", "Dodge", "Ram" },
+            new string[] { "Panda", "Tipo", "Doblo", "500X", "124 Spider" },
             new string[] { "Acura", "Civic", "Accord", "CR-V" },
             new string[] { "Kia", "Genesis", "Mobis", "Namyang" },
             new string[] { "Infiniti", "Datsun", "NISMO", "Venucia" },
@@ -38,7 +38,13 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
-            autos = new();
+            autos = new()
+            {
+                new("Volkswagen","Golf","×îðíèé","GHYT23I6FGT786543","ÈË1234ÐÂ",2006),
+                new("Volkswagen","Passat","Á³ëèé","GHIT33I6FMT786543","AX7734ÐÂ",2008),
+                new("Fiat","Panda","Á³ëèé","GKIT35I6FMT384726","AX0001ÐÂ",2010)
+            };
+
             yearNumericUpDown.Maximum = DateTime.Now.Year;
             AutosUpdate();
         }
@@ -133,7 +139,8 @@ namespace WinFormsApp1
             int index = findComboBox.SelectedIndex;
             if (index >= 0) autosComboBox.SelectedIndex = index;
             findComboBox.Text = string.Empty;
+            findComboBox.SelectedIndex = -1;
         }
-      
+        
     }
 }
