@@ -129,6 +129,7 @@
             // cNumberTextBox
             // 
             cNumberTextBox.BeepOnError = true;
+            cNumberTextBox.HidePromptOnLeave = true;
             cNumberTextBox.Location = new Point(113, 134);
             cNumberTextBox.Mask = "LL0000LL";
             cNumberTextBox.Name = "cNumberTextBox";
