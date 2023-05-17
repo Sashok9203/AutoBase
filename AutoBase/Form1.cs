@@ -61,7 +61,7 @@ namespace WinFormsApp1
             // var autoArray = autos.ToArray();                            //  При такій 
             autosComboBox.DataSource = autos.ToArray(); //  = autoArray;  //  комбінації
             autosComboBox.SelectedIndex = -1;                             //  кнопка "Знайти"
-            findComboBox.DataSource = autos.ToArray(); //  = autoArray;  //  не потрібна (?)
+            findComboBox.DataSource = autos.ToArray();  //  = autoArray;  //  не потрібна (?) елемент обраний в findComboBox автоматично обирається в autosComboBox
             findComboBox.Text = string.Empty;
             autosComboBox.Enabled = autoDelete.Enabled = showAuto.Enabled = findButton.Enabled = findComboBox.Enabled = autos.Count != 0;
         }
