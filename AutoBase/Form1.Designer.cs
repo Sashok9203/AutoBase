@@ -119,7 +119,7 @@
             vNumberTextBox.BeepOnError = true;
             vNumberTextBox.HidePromptOnLeave = true;
             vNumberTextBox.Location = new Point(113, 174);
-            vNumberTextBox.Mask = "LLLL00L0LLL000000";
+            vNumberTextBox.Mask = ">LLLL00L0LLL000000";
             vNumberTextBox.Name = "vNumberTextBox";
             vNumberTextBox.PromptChar = ' ';
             vNumberTextBox.Size = new Size(150, 23);
@@ -131,7 +131,7 @@
             cNumberTextBox.BeepOnError = true;
             cNumberTextBox.HidePromptOnLeave = true;
             cNumberTextBox.Location = new Point(113, 134);
-            cNumberTextBox.Mask = "LL0000LL";
+            cNumberTextBox.Mask = ">LL0000LL";
             cNumberTextBox.Name = "cNumberTextBox";
             cNumberTextBox.PromptChar = ' ';
             cNumberTextBox.Size = new Size(150, 23);

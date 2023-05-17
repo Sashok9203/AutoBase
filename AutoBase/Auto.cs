@@ -27,12 +27,12 @@ namespace WinFormsApp1
         public string GetInfo()
         {
             StringBuilder sb = new();
-            sb.AppendLine($"Марка  : {Brand}");
+            sb.AppendLine($"Марка   : {Brand}");
             sb.AppendLine($"Модель : {Model}");
-            sb.AppendLine($"Колір  : {Color}");
-            sb.AppendLine($"Номер  : {CNumber}");
-            sb.AppendLine($"VIN    : {VinNumber}");
-            return sb.ToString();
+            sb.AppendLine($"Колір     : {Color}");
+            sb.AppendLine($"Номер   : {CNumber}");
+            sb.AppendLine($"VIN         : {VinNumber}");
+            return sb.ToString(); 
         }
 
         public override string ToString() => $"{Brand} {Model}";

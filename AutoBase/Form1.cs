@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
@@ -133,5 +134,6 @@ namespace WinFormsApp1
             if (index >= 0) autosComboBox.SelectedIndex = index;
             findComboBox.Text = string.Empty;
         }
+      
     }
 }
